@@ -6,14 +6,6 @@ import './screens/homepage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  //create dummy data
-  var db = DatabaseConnect();
-  await db.insertTodo(Todo(
-      id: 1,
-      title: 'Sample Title',
-      creationDate: DateTime.now(),
-      isChecked: true));
-  print(await db.getTodo());
   runApp(MyApp());
 }
 
