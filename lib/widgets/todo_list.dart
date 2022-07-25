@@ -20,7 +20,7 @@ class TodoList extends StatelessWidget {
 
           return datalength == 0
               ? Center(
-                  child: Text('no Data found'),
+                  child: Text('No Data found'),
                 )
               : ListView.builder(
                   itemCount: datalength,
